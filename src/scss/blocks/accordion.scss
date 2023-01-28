@@ -3,12 +3,16 @@
 }
 
 .accordion__body {
-  height: 0;
+  max-height: 0;
   overflow: hidden;
-  transition: height 1s;
+  transition: max-height 500ms;
   background-color: lightblue;
 }
 
 .accordion__body--show {
-  height: 100px;
+  max-height: 200px;
 }
+
+/* .accordion__item:hover .accordion__body {
+  max-height: 200px;
+} */
