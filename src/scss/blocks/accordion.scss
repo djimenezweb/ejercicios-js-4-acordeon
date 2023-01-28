@@ -1,0 +1,14 @@
+.accordion__item {
+  border: 1px solid black;
+}
+
+.accordion__body {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
+  background-color: lightblue;
+}
+
+.accordion__body--show {
+  height: 100px;
+}
