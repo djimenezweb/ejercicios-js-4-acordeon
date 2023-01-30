@@ -1,18 +1,33 @@
-.accordion__item {
-  border: 1px solid black;
-}
+.accordion {
+  width: 80%;
+  margin: 1rem auto;
 
-.accordion__body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 500ms;
-  background-color: lightblue;
-}
+  &__item {
+    border: 1px solid black;
+    cursor: pointer;
+  }
 
-.accordion__body--show {
-  max-height: 200px;
-}
+  &__header {
+    margin: 0;
+    background-color: lightblue;
+    padding-left: 1rem;
+    pointer-events: none;
+  }
 
-/* .accordion__item:hover .accordion__body {
-  max-height: 200px;
-} */
+  &__title {
+    pointer-events: none;
+    margin: 0;
+  }
+
+  &__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms;
+    padding-left: 1rem;
+    pointer-events: none;
+  }
+
+  &__text {
+    pointer-events: none;
+  }
+}
