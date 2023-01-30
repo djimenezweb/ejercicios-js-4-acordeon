@@ -3,7 +3,7 @@ import '../scss/styles.scss';
 
 document.querySelectorAll('.accordion__item').forEach(item => {
   item.addEventListener('click', () => {
-    item.children[1].classList.toggle('.accordion__body--show');
+    item.children[1].classList.toggle('accordion__body--show');
   });
 });
 
